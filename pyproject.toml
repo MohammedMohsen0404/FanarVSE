@@ -30,7 +30,7 @@ classifiers = [
 dev = ["pytest>=8", "ruff>=0.6"]
 
 [project.urls]
-Repository = "https://github.com/OWNER/FanarVSE"
+Repository = "https://github.com/MohammedMohsen0404/FanarVSE"
 
 [tool.setuptools.dynamic]
 version = { attr = "fanarvse.__version__" }

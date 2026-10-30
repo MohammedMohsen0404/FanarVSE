@@ -5,7 +5,7 @@ Thank you for helping. This guide covers the development setup, what a pull requ
 ## Development setup
 
 ```
-git clone https://github.com/OWNER/FanarVSE
+git clone https://github.com/MohammedMohsen0404/FanarVSE
 cd FanarVSE
 python -m venv .venv
 # Windows: .venv\Scripts\activate    Linux: source .venv/bin/activate

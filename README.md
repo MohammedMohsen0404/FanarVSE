@@ -20,7 +20,7 @@ FanarVSE needs an NVIDIA GPU, Python 3.10 or newer, and PyTorch with CUDA.
 
 ```
 pip install torch --index-url https://download.pytorch.org/whl/cu124
-pip install git+https://github.com/OWNER/FanarVSE
+pip install git+https://github.com/MohammedMohsen0404/FanarVSE
 ```
 
 On Windows this installs `triton-windows`; on Linux, Triton comes with PyTorch.
