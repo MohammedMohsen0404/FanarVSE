@@ -12,7 +12,7 @@ FanarVSE is a GPU index for maximum inner-product (and cosine) search over embed
 | FanarVSE, preset `max` | 0.999 | 13,558 | 570 B/vector |
 | CAGRA (cuVS), best configuration near the same recall | 0.991 | 4,421 | 3,200 B/vector |
 
-The method and the full evaluation, against CAGRA, IVF-RaBitQ, IVF-PQ and FAISS on eight datasets, are in the paper: *FanarVSE: Fast, Memory-Light GPU Vector Search with Error Bars from Coding Theory* (Mohammed Mohsen). Its experiment scripts and raw results are archived in the separate **FanarVSE-paper** repository.
+The method and the full evaluation, against CAGRA, IVF-RaBitQ, IVF-PQ and FAISS on eight datasets, are in the paper: *FanarVSE: Fast, Memory-Light GPU Vector Search with Error Bars from Coding Theory* (Mohammed Mohsen). Its experiment scripts and raw results are archived in the separate [FanarVSE-paper](https://github.com/MohammedMohsen0404/FanarVSE-paper) repository.
 
 ## Install
 
