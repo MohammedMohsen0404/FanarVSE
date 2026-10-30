@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fanarvse"
+dynamic = ["version"]
+description = "Memory-light GPU vector search with error bars from coding theory"
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+authors = [{ name = "Mohammed Mohsen", email = "mm5987@fayoum.edu.eg" }]
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.4",
+    "numpy>=1.24",
+    "triton>=3.0; platform_system == 'Linux'",
+    "triton-windows>=3.2; platform_system == 'Windows'",
+]
+keywords = ["vector search", "ANN", "GPU", "quantization", "embeddings"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Environment :: GPU :: NVIDIA CUDA",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[project.urls]
+Repository = "https://github.com/OWNER/FanarVSE"
+
+[tool.setuptools.dynamic]
+version = { attr = "fanarvse.__version__" }
+
+[tool.setuptools.packages.find]
+include = ["fanarvse*"]
+
+[tool.ruff]
+line-length = 140
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["E741"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
